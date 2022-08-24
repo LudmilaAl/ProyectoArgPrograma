@@ -1,0 +1,14 @@
+.group {
+    padding: 15px;
+    background-color: rgba(216, 216, 213, 0.89);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: large;
+}
+
+h3 {
+    font-size: medium;
+}
+

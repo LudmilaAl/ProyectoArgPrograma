@@ -1,0 +1,56 @@
+div{
+    background-image: url(../../../assets/ParteArriba.png) ;
+    background-size: 100%;
+    height: fit-content;
+    padding: 15px;
+    border: 0%;
+    margin-bottom: 0%;
+}
+
+h1{
+    text-align: left;
+    color:rgb(238, 238, 237);
+    font-size:medium;
+    font-weight: 600;
+    font-family:"Cambria";
+    margin-left: 15px;
+    margin-top: 0%;
+}
+
+.group{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.redes{
+   width: 50px;
+   margin: 0.1cm;
+}
+
+.redes:hover{
+  transform: scale(1.10);
+  transition: 100ms;
+}
+
+.btn{
+  margin: 0.1cm;
+}
+
+
+@media(max-width:575px){
+  .group{
+    flex-direction: column;
+  }
+
+  .redesingr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes{
+    margin: 0.2cm;
+    }
+
+  
+}

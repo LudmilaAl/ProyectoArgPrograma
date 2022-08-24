@@ -1,0 +1,65 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(216, 216, 213, 0.89);
+}
+
+h1{
+   margin-bottom: 0cm;
+   padding: 15px;
+  
+}
+.group{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+}
+.circle.per-80 {
+  background-image: conic-gradient(#8384b5 80%, #FFCDB2 0);
+}
+.circle.per-75 {
+  background-image: conic-gradient(#8384b5 75%, #FFCDB2 0);
+}
+.circle.per-70 {
+  background-image: conic-gradient(#8384b5 70%, #FFCDB2 0);
+}
+.circle.per-100 {
+    background-image: conic-gradient(#8384b5 100%, #FFCDB2 0);
+}
+.circle.per-66 {
+    background-image: conic-gradient(#8384b5 66%, #FFCDB2 0);
+}
+.circle.per-33 {
+    background-image: conic-gradient(#8384b5 33%, #FFCDB2 0);
+}
+
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: rgba(216, 216, 213, 0.89);
+  border-radius: 50%;
+  font-size:medium;
+  font-weight: 300;
+  color: black;
+}
+
+.idiomas{
+    align-items: center;
+}

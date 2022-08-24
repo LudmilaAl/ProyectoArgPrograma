@@ -1,0 +1,46 @@
+<section class="vh-100" style="background-color: rgba(216, 216, 213, 0.89);">
+    <div class="container py-5 h-100" *ngIf="workExp">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-7col-xl-7">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <h3 class="mb-5">Modificar Experiencia</h3>
+
+                        <form #f="ngForm" (ngSubmit)=" onUpdate()" novalidate>
+
+                            <div class="form-outline mb-4">
+                                <label for="nameExp">Empresa</label>
+                                <input type="text" class="form-control" id="nameExp" name="nameExp"
+                                    [(ngModel)]="workExp.nameExp" required>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label for="dateExp">Año</label>
+                                <input type="text" class="form-control" id="dateExp" name="dateExp"
+                                    [(ngModel)]="workExp.dateExp" required>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label for="descriptionExp">Descripcion</label>
+                                <textarea type="text" class="form-control" id="descriptionExp" name="descriptionExp"
+                                [(ngModel)]="workExp.descriptionExp" required rows="4"></textarea>
+                                
+                            </div>
+
+
+
+                            <button class="btn btn-primary btn-lg btn-block" style="background-color: #b5b4c7;"
+                                type="submit">Actualizar</button>
+
+                            <hr class="my-4">
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

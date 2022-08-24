@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(216, 216, 213, 0.89);
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.proyect1{
+    width: auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  
+}
+
+.parte1, .parte2 {
+    display:inline-block;
+    align-items: center;
+}
+
+
+.imagen:hover{
+    transform: scale(1.10);
+    transition: 300ms;
+    opacity: 80%;
+}
+
+@media(max-width:575px){
+
+    .proyect1{
+      margin: 0.2cm;
+      flex-direction: column;
+    }
+  }

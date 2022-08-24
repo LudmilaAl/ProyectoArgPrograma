@@ -1,0 +1,30 @@
+<div class="group">
+    <h1>Educación</h1>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button type="button" class="btn btn-light" routerLink="/newstudies" *ngIf="isLogged">
+            Nuevos Estudios
+        </button>
+    </div>
+
+   
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Studies of studies">
+                    <td>
+                        <h2>{{Studies.degreeS}}</h2>
+                        <h3>{{Studies.dateS}}</h3>
+                        
+                    </td>
+                    <td><h3>{{Studies.institutionS}}</h3></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editstudies/{{Studies.id}}"> <i class="fa-solid fa-pencil"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" (click)="delete(Studies.id)"> <i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

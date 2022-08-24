@@ -1,0 +1,35 @@
+.group{
+   padding: 15px; 
+   display: flex;
+   align-items: center;
+   background-color: rgba(216, 216, 213, 0.89);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div{
+   text-align: center;
+}
+
+#fotoCV{
+    box-shadow: 4px 4px 4px 4px grey;
+    width: 6cm;
+}
+
+#nombre{
+    font-size:x-large;
+    font-weight: bold;
+}
+
+p{
+    font-size:medium;
+}
+
+@media(max-width:575px){
+    .group{
+      flex-direction: column;
+    }
+    .semigroup{
+        margin: 0.2cm;
+      }
+
+  }
